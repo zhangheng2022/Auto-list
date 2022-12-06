@@ -8,5 +8,5 @@ const axiosParams = {
 }
 
 axios(axiosParams).then(res => {
-    console.log(res.data.msg)
+    console.log(res.data.msg)  
 });
