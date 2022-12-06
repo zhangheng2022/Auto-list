@@ -27,4 +27,4 @@ jobs:
         with:
           node-version: 14
       - run: npm ci
-      - run: node ./scripts/v2free-vpn-signin.js
+      # - run: node ./scripts/v2free-vpn-signin.js
