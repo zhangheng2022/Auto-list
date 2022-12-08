@@ -22,7 +22,7 @@ function sendMesage() {
       }
     }
     axios(axiosParams).then(res => {
-      console.log(res);
+      console.log(res.data);
       resolve(res)
     }).catch(err => {
       console.log(err);

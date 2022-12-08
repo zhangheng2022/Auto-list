@@ -29,4 +29,4 @@ jobs:
         with:
           node-version: 14
       - run: npm ci
-      - run: npm vpn-signin
+      - run: npm run vpn-signin
