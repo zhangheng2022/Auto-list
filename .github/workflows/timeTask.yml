@@ -1,13 +1,13 @@
 # This is a basic workflow to help you get started with Actions
 
-name: v2free-vpn-signin
+name: timeTask
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
+  schedule:
+    - cron: "0 22 * * *"
   push:
-    branches: ["master"]
-  pull_request:
     branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
@@ -29,4 +29,4 @@ jobs:
         with:
           node-version: 14
       - run: npm ci
-      - run: node ./scripts/v2free-vpn-signin.js
+      - run: npm vpn-signin
